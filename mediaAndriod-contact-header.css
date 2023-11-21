@@ -1,0 +1,465 @@
+body {
+   margin: 0;
+   background-color: rgb(138, 138, 138);
+   z-index: 1;
+   animation-name: example;
+   animation-duration: 5s;
+  
+   animation-iteration-count: 100;
+   
+ 
+ 
+}
+
+ul {
+    
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+
+a{
+    color: white;
+}
+
+
+
+
+.con-title-image {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    border-bottom: 2px solid green;
+ 
+    
+    position: fixed;
+    width: 100%;
+   
+    z-index: 2;
+
+    background-color: rgb(0, 0, 0);
+ 
+   
+     
+   
+}
+.logo {
+    
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    
+    
+    margin-left: 3%;
+   
+}
+.MQA-text {
+    display: none;
+    font-family: 'Phudu';
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 35px;    
+   
+}
+
+.adv-text {
+    color:green;
+}
+.sing-text {
+    color:red;
+}
+.Advertisingtext {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    
+    color: white;
+    
+    
+    
+   
+}
+
+.text-logo{
+    width: 350px;
+    height: 30px;
+    transform: rotate(30);
+}
+
+.con-menu-bar {
+    display: flex;
+    flex-direction: row;  
+    background-color: lightcyan;
+}
+
+
+.home-button{
+    white-space: nowrap;
+    width: 50px;
+    height: 30px;
+    font-family: roboto;
+    font-size: 10px;
+    font-weight: 500;
+     margin-top: 30px;
+  
+     background-color: transparent;
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .home-content {
+    font-size: 11px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+    width: 150px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .home-content a {
+    color: black;
+   
+    text-decoration: none;
+    display: block;
+  }
+  
+  .home-content a:hover {
+    background-color: #747171;
+    
+}
+  
+  .dropdown:hover .home-content {
+    background-color:rgba(128, 128, 128, 0.507);
+
+    display: block;
+  }
+  
+  .dropdown:hover .home-button {
+    background-color: #afbdaf;
+  }
+
+  .dropdown:hover .shopping-button {
+    background-color: #3b423b;
+  }
+
+
+
+.shopping-button{
+    white-space: nowrap;
+    width: 60px;
+    height: 30px;
+    font-family: roboto;
+    font-size: 10px;
+    font-weight: 500;
+     margin-top: 30px;
+   
+     background-color: transparent;
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+
+
+.dropdown:hover .about-us{
+    background-color: #afbdaf;
+  }
+
+
+
+
+
+.about-us{
+    display: none;
+    white-space: nowrap;
+    width: 100px;
+    height: 30px;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 500;
+     margin-top: 60px;
+     margin-right: 20px;
+     background-color: transparent;
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+
+.dropdown:hover .contact-us{
+    background-color: #afbdaf;
+  }
+
+
+.contact-us{
+   
+    white-space: nowrap;
+    width: 60px;
+    height: 30px;
+    font-family: roboto;
+    font-size: 10px;
+    font-weight: 500;
+     margin-top: 30px;
+   
+     background-color: transparent;
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+.menu-button{
+    display: none;
+}
+
+.top-img-header {
+    padding-top: 61px;
+    width: 100%;
+    
+    
+    
+}
+
+.img-head {
+   
+  width: 100%;
+  height: 200px;
+  
+}
+
+.our-products{
+    display: inline-block;
+    width: 100%;
+
+    font-style: roboto;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+   
+    margin-bottom: 5%;
+}
+
+.order-con {
+    background-color: red;
+    width: 100%;
+    height: 25px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: roboto;
+    font-weight: 200;
+   
+}
+
+.order-con:hover {
+    background-color: #afbdaf;
+}
+
+
+.con-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-left: 1%;
+    margin-right: 1%;
+    
+    width: 98%;
+    
+}
+
+.product-name{
+    font-size: 10px;
+    text-align: center;
+    font-family: roboto;
+    font-weight: 100;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+   
+}
+
+
+
+
+.product-image2:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    cursor: pointer;
+
+    
+}
+.product-image2{
+    
+    width: 100%;
+    height:100px;
+}
+
+.con-find {
+
+    width: 90%;
+    height: 200px;
+    background-color: rgb(204, 189, 189);
+    margin-left: 55px;
+    margin-top: 5px;
+    padding-top: 100px;
+    text-align: center;
+    
+   
+
+}
+.find {
+
+    width: 90%;
+    height: 200px;
+    
+    margin-left: 55px;
+    margin-top: 5px;
+    padding-top: 100px;
+    
+    font-size: 25px;
+}
+
+
+
+
+.buttonimg{
+    padding: 0%;
+}
+
+.con-contact-us {
+    margin-top: 3%;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    height: 100px;
+   
+    font-family: roboto;
+    font-size: 10px;
+    
+     
+   
+     background-color: rgb(14, 14, 13);
+     border: none;
+     color: white;
+     cursor: pointer;
+}
+
+.contact-us-logo {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 4%;
+    position: left;
+}
+.logo-contact {
+    
+    width: 60px;
+}
+
+
+.contact-us-text {
+    font-size: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+    margin-left: 5%;
+}
+
+
+
+.connect-with-us{
+    
+    margin-left: 5%;
+    display: inline-block;
+   
+   
+
+    text-align: center;
+    font-size: 20px;
+    
+    
+
+}
+
+.connect-with-us-text {
+    font-size: 10px;
+    
+    display: block;
+}
+
+
+
+.facebook-logo {
+    width: 50px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 10%;
+    margin-right: 1%;
+
+}
+
+.instagram-logo {
+    width: 50px;
+    border-radius: 18px;
+    display: inline-block;
+    margin-top: 1%;
+    
+
+}
+
+.about-us-con {
+    
+    padding-top: 8px;
+    
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(29, 66, 29);
+    color:rgb(250, 248, 248);
+    
+}
+
+.about-P {
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    background: rgb(44, 40, 40);
+    color:rgb(248, 241, 241);
+    padding-bottom: 20px;
+   
+    
+}
+
+.para {
+    font-style: normal;
+    font-weight: 200;
+    margin: 20px;
+}
+
+.footer-logo {
+    width: 100%;
+    
+    
+   
+}
+
+.prime-logo {
+
+    display: none;
+    width: 100%;
+    height: 100px;
+    
+}

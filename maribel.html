@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  
+      
+      <style>
+
+        /*hover effects*/
+
+
+
+
+        html {
+  scroll-behavior:smooth;
+}
+       
+        
+        
+        
+        
+        
+        
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          width: 100%;
+          text-align: center;
+          margin: 0px 0 0px 0;
+          position: relative;
+        }
+           /* The Modal (background) */
+           .modalSubliTshirts{
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgba(0, 0, 0, 0.726); /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.952); /* Black w/ opacity */
+          padding-top: 40px;
+          
+         
+        }
+        
+        
+        
+        
+        /* The Modal (background) */
+  
+        .modalCallingCard , .modalMugs , .modalPvcId ,  .modalFoodMenu , .modalCalendar ,
+         .modalStickers , .modalBanners , .modalReceipt , .modalLanyard , .modalPosters , .modalNotepads {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgba(0, 0, 0, 0.726); /* Fallback color */
+          background-color: rgba(0, 0, 0, 0.952); /* Black w/ opacity */
+          padding-top: 40px;
+        }
+  
+  
+
+
+        /* Modal Content/Box */
+        .modal-content {
+          border-radius: 20px;
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 40%; 
+         height: 25px;/* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+      
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+
+        <link rel="stylesheet" media="screen and (min-width: 1200px)" href="mediaPC-contact-header.css">
+        <link rel="stylesheet" media="screen and (max-width:399px) and (min-width: 300px)" href="mediaAndriod-contact-header.css">
+        <link rel="stylesheet" media="screen and (max-width:399px) and (min-width: 320px)" href="mediaAndriod1-contact-header.css">
+
+        <link rel="stylesheet" media="screen and (max-width:599px) and (min-width: 400px)" href="mediaTablet-contact-header.css">
+        <link rel="stylesheet" media="screen and (max-width:1199px) and (min-width: 600px)" href="mediaLaptop-contact-header.css">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+      
+        
+        
+
+    </head>
+
+
+
+    <body>
+     
+        <div class="con-title-image">
+          <img  class="logo" src="img/logo2.png">
+          <div class="MQA-text"><span style="color: green;">M</span><span style="color: white;">Q</span><span style="color: red;">A</span></div> <div class="Advertisingtext">&nbsp <span class="adv-text">Adv</span>erti<span class="sing-text">sing</span> <span class="adv-text">S</span>hop</div>
+          
+          <div   class="dropdown">
+          <a href="maribel.html"> <button class="home-button"><i class="fa fa-home"></i>Home</a></button></a> 
+          </div>
+          
+          <div class="dropdown">
+            <button class="shopping-button"><i class="fa fa-shopping-bag"></i>Products</button>
+            <div class="home-content">
+              <ul>
+            <a href="#mugsSection"><li>Mugs</li></a>
+            <a href="#mugsSection"><li>Calling Cards</li></a>
+            <a href="#mugsSection"><li>Sublimation T shirt</li></a>
+            <a href="#FoodMenu"><li>Food Menu</li></a>
+            <a href="#FoodMenu"><li>PVC ID</li></a>
+            <a href="#FoodMenu"><li>Calendar</li></a>
+            <a href="#stickers"><li>stickers</li></a>
+            <a href="#stickers"><li>Banners</li></a>
+            <a href="#stickers"><li>Receipt</li></a>
+            <a href="#lanyards"><li>Lanyard</li></a>
+            <a href="#lanyards"><li>Posters</li></a>
+            <a href="#lanyards"><li>Notepads</li></a>
+
+          </ul>
+            </div>
+
+          </div>
+
+          <div  class="dropdown">
+          <a href="#about-us-para"><button class="about-us">About Us</button></a>
+          </div>
+
+          <div   class="dropdown">
+           <a href="#contact-us"><button class="contact-us" >Contact Us</button></a> 
+          </div>
+          
+          <div class="dropdown">
+          <button class="menu-button"><i class="fa fa-bars"></i> Menu</button>
+        </div>
+
+        </div>
+
+     
+
+        <div  class="top-img-header">
+          <div class="slideshow-container">
+
+            <div style="width: 100%;" class="mySlides fade">
+            
+              <img class="img-head"  src="img/header-image.jpg">
+              
+            </div>
+            
+            <div style="width: 100%;"  class="mySlides fade">
+            
+              <img  class="img-head" src="img/header-image2.png">
+             
+              
+            </div>
+            
+            <div style="width: 100%;"  class="mySlides fade">
+             
+              <img class="img-head"  src="img/header-image3.png" >
+            
+            </div>
+
+            <div style="width: 100%;" class="mySlides fade">
+             
+              <img class="img-head" src="img/header-image4.png" >
+            
+            </div>
+
+            <div style="width: 100%;" class="mySlides fade">
+             
+              <img class="img-head" src="img/header-image5.png" >
+            
+            </div>
+
+            <div style="width: 100%;" class="mySlides fade">
+             
+              <img  class="img-head" src="img/header-image6.png">
+            
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center; display: none;">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+        </div>
+
+        <div id="mugsSection" class="our-products"> Our Products</div>
+  
+
+
+        <div class="con-products">
+            
+            
+                
+            
+          <div>
+            <div class="product-name">
+            Customize Mugs
+            </div>
+           
+              
+            
+            
+            <button class="buttonimg" onclick="document.getElementById('id01').style.display='block'"  style="width:100%;"> 
+                <img  class="product-image2" src="img/products/mugs1.png">
+              </button> 
+
+              <div id="id01" class="modalMugs">
+                
+                  <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <div>
+                      <img  src="img/products/mugs2.png" style="width:100%;padding-bottom: 40px;">
+                    <img  src="img/products/mugs3.png" style="width:100%;padding-bottom: 40px;">
+                    <img  src="img/products/image1.png" style="width:100%;padding-bottom: 40px;">
+                    <img  src="img/products/mugs5.png" style="width:100%;padding-bottom: 40px;">
+                    <img  src="img/products/mugs6.png" style="width:100%;padding-bottom: 40px;">
+                  </div>
+                  </div>
+
+                  </form>
+               </div>
+               <div class="product-text">
+              
+                
+              <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+            </div>   
+
+          </div>
+            
+            <div>
+              <div class="product-name">Calling Cards</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id02').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/callingcard1.png">
+                </button>
+
+                <div id="id02" class="modalCallingCard">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/callingcad2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/callingcard3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/callingcard4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/callingcard5.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/callingcard6.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+                  
+                  
+              </div>   
+
+            </div>
+
+            <div>
+              <div class="product-name">Sublimation T shirt</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id03').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/sublitshirt1.png">
+                </button>
+
+                <div id="id03" class="modalSubliTshirts">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/sublitshirt2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/sublitshirt3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/sublitshirt4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/sublitshirt5.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/sublitshirt6.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button id="FoodMenu" class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+              
+            <div>
+              <div   class="product-name">Food Menu</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id04').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/foodmenu1.png">
+                </button>
+
+                <div id="id04" class="modalFoodMenu">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/foodmenu.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/foodmenu2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/foodmenu3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/foodmenu4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/foodmenu5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button id="stickers" class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+
+            <div>
+              <div class="product-name">PVC ID</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id05').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/pvcid.png">
+                </button>
+
+                <div id="id05" class="modalPvcId">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/pvcid1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/pvcid2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/pvcid3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/pvcid4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/pvcid5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+                  
+            <div>
+              <div class="product-name">Calendar</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id06').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/calendar.png">
+                </button>
+
+                <div id="id06" class="modalCalendar">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id06').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/calendar1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/calendar2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/calendar3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/calendar4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/calendar5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+
+            <div>
+              <div  class="product-name">Stickers</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id07').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/stickers.png">
+                </button>
+
+                <div id="id07" class="modalStickers">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id07').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/stickers1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/stickers2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/stickers3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/stickers4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/stickers5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button id="lanyards"  class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+
+            <div>
+              <div class="product-name">Banners</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id08').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/banners.png">
+                </button>
+
+                <div id="id08" class="modalBanners">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id08').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/banners1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/banners2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/banners3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/banners4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/banners5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div> 
+
+            <div>
+              <div class="product-name">Receipt</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id09').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/receipt.png">
+                </button>
+
+                <div id="id09" class="modalReceipt">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id09').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/receipt1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/receipt2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/receipt3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/receipt4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/receipt5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+                  
+            <div>
+              <div class="product-name">Lanyard</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id10').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/lanyards.png">
+                </button>
+
+                <div id="id10" class="modalLanyard">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id10').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/lanyards1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/lanyards2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/lanyards3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/lanyards4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/lanyards5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+              
+            <div>
+              <div class="product-name">Posters</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id11').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/posters.png">
+                </button>
+
+                <div id="id11" class="modalPosters">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id11').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/posters1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/posters2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/posters3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/posters4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/posters5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+
+            <div>
+              <div class="product-name">Notepads</div>
+              
+                <button class="buttonimg" onclick="document.getElementById('id12').style.display='block'" style="width:100%;"> 
+                  <img  class="product-image2" src="img/products/notepads.png">
+                </button>
+
+                <div id="id12" class="modalNotepads">
+                  
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('id12').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img  src="img/products/notepads1.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/notepads2.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/notepads3.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/notepads4.png" style="width:100%;padding-bottom: 40px;">
+                      <img  src="img/products/notepads5.png" style="width:100%;padding-bottom: 40px;">
+                    </div>
+
+                    </form>
+                 </div>
+                 <div class="product-text">
+                
+                  <a href="https://forms.gle/SLMy4BSKxmou9q4D8" target="_blank"><button id="contact-us"  class="order-con">Quote to Order</button></a>
+
+                  
+                  
+              </div>   
+
+            </div>
+
+            </div> 
+
+ 
+            <div class="con-contact-us">
+
+              
+
+              <div class="contact-us-logo"> 
+                <img class="logo-contact" src="img/logo2.png">
+              </div>
+              <div class="contact-us-text">
+                <h>Contact us</h>
+                <p>omandamsamil@gmail.com</p>
+                <p>+639162511706</p>
+              </div>
+
+              <div class="connect-with-us">
+                <h class="connect-with-us-text">CONNECT WITH US</h>
+                
+                 <a href="https://www.facebook.com/profile.php?id=61551360330294" target="_blank"><img class="facebook-logo" src="img/facebook-logo.png"></a> 
+                  <a href="https://www.instagram.com/" target="_blank"><img class="instagram-logo" src="img/instagram-logo.jpg"></a>
+    
+            </div>
+
+              
+
+            </div>
+
+            <div class="footer-logo">
+              <img class="prime-logo" src="img/logo-prime.jpg">
+    
+            </div>
+
+     
+        <div class="about-us-con">
+          <div>
+            <h1>About us</h1>
+          </div>
+
+          <div id="about-us-para" class="about-P">
+            <p class="para">
+              Welcome to MQA - your one-stop advertising and printing shop! Our dynamic team of creative minds and innovative thinkers is dedicated to providing top-notch advertising solutions for businesses of all shapes and sizes.
+              We believe that great design can make a huge impact on any business, and that's why we offer a wide range of services, from eye-catching graphics to high-quality printing. Whether you're a small startup or an established corporation, we have the expertise to elevate your brand and attract more customers.
+              Founded in 2005, MQA has been helping businesses across the country stand out from the crowd with our unique and effective advertising strategies. We understand the ever-evolving market trends and know how to make your brand shine in this competitive landscape.
+              But what truly sets us apart is our passion for what we do. We are constantly pushing ourselves to think outside the box and come up with fresh ideas that will make your brand unforgettable. Our team takes pride in delivering exceptional results that exceed our clients' expectations.
+              So if you want to take your business to new heights, look no further than MQA. Let us be your partner in success, as we work together to create an exciting and impactful advertising campaign for your brand. Contact us today and let's make some magic
+             
+            </p>
+          </div>
+          
+
+        </div>
+
+       
+
+
+
+
+
+        <script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          // Get the modal
+          var modalMugs = document.getElementById('id01');
+          var modalCallingCard = document.getElementById('id02');
+          var modalSubliTshirts = document.getElementById('id03');
+          var modalFoodMenu = document.getElementById('id04');
+          var modalPvcId = document.getElementById('id05')
+          var modalCalendar = document.getElementById('id06')
+          var modalStickers = document.getElementById('id07')
+          var modalBanners = document.getElementById('id08')
+          var modalReceipt = document.getElementById('id09')
+          var modalLanyard = document.getElementById('id10')
+          var modalPosters= document.getElementById('id11')
+          var modalNotepads= document.getElementById('id12')
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modalMugs) {
+                  modalMugs.style.display = "none";
+              }
+
+              else if (event.target == modalCallingCard) {
+                modalCallingCard.style.display = "none";
+              }
+
+              else if (event.target == modalSubliTshirts ) {
+                modalSubliTshirts.style.display = "none";
+              }
+              
+              else if (event.target == modalFoodMenu ) {
+                modalFoodMenu.style.display = "none";
+              }
+
+              else if (event.target == modalPvcId ) {
+                modalPvcId.style.display = "none";
+              }
+
+              else if (event.target == modalCalendar) {
+                modalCalendar.style.display = "none";
+              }
+
+              else if (event.target == modalStickers) {
+                modalStickers.style.display = "none";
+              }
+
+              else if (event.target == modalBanners) {
+                modalBanners.style.display = "none";
+              }
+
+              else if (event.target == modalReceipt) {
+                modalReceipt.style.display = "none";
+              }
+
+              else if (event.target == modalLanyard) {
+                modalLanyard.style.display = "none";
+              }
+
+              else if (event.target == modalPosters) {
+                modalPosters.style.display = "none";
+              }
+
+              else if (event.target == modalNotepads) {
+                modalNotepads.style.display = "none";
+              }
+
+
+          }
+          </script>
+
+    </body>
+
+
+
+</html>
